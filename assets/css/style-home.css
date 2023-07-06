@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green:#32d823;
+    --white:#fff;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-family: 'Caprasimo', cursive;
+    color: var(--white);
+}
+
+.logo-text:hover {
+    color: var(--white);
+}
+
+.btn {
+    background-color: var(--white);
+    color: #32d823;
+    font-weight: 800;
+    border: 2px solid #32d823;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color:var(--green);
+
+}
+
+.logout {
+    display: flex;
+    padding: 0 25px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: var(--white);
+    justify-content:center;
+}
+
+.logout i {
+    color: var(--white);
+    margin: 5px;
+}
+
+section h1 {
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(70, 70, 70);
+    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+button span {
+    color: #231d19;
+    font-size: 1.2rem;
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    
+}
+
+.table td{
+    color: rgb(35, 29, 25);
+}
+
+
+.table .valores-negativos {
+    color: red;
+    font-weight: 500;
+}
+
+.table .valores-positivos {
+    color: #32d823;
+    font-weight: 500;
+    
+}
+
+.right-conta-titulo h2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    width: 100%;
+    font-size: 3vmin;
+    padding: 0 25px;
+}
+
+.valor-conta{
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    padding-right: 120px;
+    font-size: 3vmin;
+    color: #32d823;
+    font-weight: 800;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style-home.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg" style="background-color: #32d823;">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-text" href="#">MindMoney</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="O que procura?"
+                                aria-label="Search">
+                            <button class="btn" type="submit">Busca</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="logout"><a href="../../index.html">Sair</a>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="tela-inicial">
+            <h1>Está é sua página Inicial</h1>
+            <div class="row my-5">
+                <div class="accordion col-lg-6" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Saldo e Extrato da conta</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show extrato"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="right-conta">
+                                    
+                                        <div class="row p-">
+                                            <div class="col-lg-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="right-conta-titulo">
+                                                            <h2>Saldo em conta corrente</h2>
+                                                            <div class="valor-conta">
+                                                                R$ 1.810.00
+                                                            </div><br>
+                                                        <a href="#" class="btn">Ver Extrato</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabela-conta col-lg-6">
+                                    <table class="table table-striped table-borda ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Data</th>
+                                                <th scope="col">Descrição</th>
+                                                <th scope="col">Valor(R$)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>05/07</td>
+                                                <td>Pix TRANSF</td>
+                                                <td class="valores-positivos">1.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04/07</td>
+                                                <td>PAG INT11234654</td>
+                                                <td class="valores-negativos">-500,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05/07</td>
+                                                <td>Consórcio 2/12</td>
+                                                <td class="valores-negativos">-850,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03/07</td>
+                                                <td>PAG TIT3112346</td>
+                                                <td class="valores-negativos">-690,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02/07</td>
+                                                <td>Pix TRANSF</td>
+                                                <td class="valores-positivos">2.850,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
